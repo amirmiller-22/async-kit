@@ -1,0 +1,20 @@
+{
+  "name": "async-kit",
+  "version": "0.1.0",
+  "description": "Tiny, dependency-free TypeScript helpers for async code: retry, timeout, concurrency limit, chunk, groupBy.",
+  "license": "MIT",
+  "author": "Amir Miller",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "!dist/**/*.test.*"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test \"dist/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
